@@ -1,0 +1,18 @@
+
+<!-- selectedFilm puede ser cambiado por otro nombre, en films.component.html hay que cambiarlo tambien
+y en film-detail.component en @input tambien habria que cambiar el nombre, esos tres deben de ser igual -->
+
+<div *ngIf="selectedFilm !== undefined" class="prueba">
+    <span>{{selectedFilm.title}} Details</span>
+    <p>
+        Id: {{selectedFilm.id}}
+        <br>
+        Title: {{selectedFilm.title}}
+        <br>
+        Year: {{selectedFilm.year}}
+        <br>
+        Score: {{selectedFilm.score}}
+        <br>
+    </p> 
+</div>
+

@@ -1,0 +1,49 @@
+@import '~leaflet/dist/leaflet.css';
+@import 'variables.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // This defines what 1rem is: 1 rem = 10px; 10px/16px = 62.5%
+    font-family: Helvetica;
+    min-height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    width: auto;
+}
+
+.btn {
+    background-color: $button-backgroundColor;
+    text-decoration: none;
+    color: $secondary-textColor;
+    padding: 1rem 3rem;
+    border-radius: 1.5rem;
+    font-size: 2.5rem;
+    margin: 1rem;
+    box-shadow: 0 1rem 0.8rem rgba(0, 0, 0, 0.2);
+
+    @media only screen and (max-width: 375px) {
+        padding: 1rem 3rem;
+        font-size: 2rem;
+        line-height: 3;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.arrow {
+    font-size: 10rem;
+    margin: 1rem;
+    color: $arrowColor;
+    &:hover {
+        cursor: pointer;
+    }
+}

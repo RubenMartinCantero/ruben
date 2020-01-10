@@ -1,0 +1,28 @@
+.boxFilms {
+    display: flex;
+    margin: 5px;
+    box-sizing: content-box;
+    width: 400px;
+}
+.ids {
+    width: 40px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px 0px 0px 8px;
+    background-color: rgb(110, 129, 214);
+}
+.boxContent {
+    width: 350px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: rgb(248, 212, 212);
+    &:hover {
+        background-color: green;
+    }
+}

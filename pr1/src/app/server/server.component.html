@@ -1,0 +1,34 @@
+
+<p>server works!</p>
+<label>Server Name</label>
+<!-- <input
+  type="text"
+  class="form-control"
+  (input)="onUpdateServerName($event)"
+> -->
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="serverName"
+>
+<!-- <p>{{ serverName }} </p> -->
+
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add server</button>
+
+<!-- <p [innerText]="allowNewServer"></p> -->
+<p>{{serverCreationStatus}}</p>
+
+<h2>Ejercicio vid. 34</h2>
+<hr>
+
+<div class="container">
+  <div class="row">
+      <div class="col-xs-12">
+        <label for="">Nombre de usuario</label>
+        <input type="text" class="form-control" [(ngModel)]="username">
+        <!-- <p>{{username}}</p> -->
+        <button class="btn btn-primary" [disabled]="username === ''" (click)="username = usertype">No pulsar</button>
+      </div>
+  </div>
+</div>
+

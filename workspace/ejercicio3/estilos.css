@@ -1,0 +1,186 @@
+#h1 { 
+    font-size: 40px;
+    font-family: Helvetica;
+    text-align: center;
+}
+
+#p1 {
+    color:blue;
+}
+
+#p2 {
+    color:green;
+}
+
+#p3 {
+    color:yellow;
+}
+
+#p4 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.parrafo-azul {
+    
+    background-color: rgb(154, 232, 235);
+}
+
+.parrafo-rosa {
+    
+    background-color: rgb(240, 145, 219);
+}
+
+.cont1 {
+    width: 80vw;
+    height: 100vh;
+    background-color: green;
+    border: 6px solid;
+}
+.cont2 {
+    width: 50%;
+    height: 65%;
+    background-color: red;
+    border: 3px solid ;
+    border-color: aqua;
+    /* box-sizing: border-box; */
+}
+.cont3 {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(112, 63, 112);
+    border: 1px solid;
+    border-color:white;
+    box-sizing: border-box; /*el tamaño del cont3 tiene en cuenta el tamaño del borde. */
+}
+
+/* Border, es el borde, si es que tiene, grosor, forma etc. */
+/* Margin es el margen respecto de otros contenedores */
+/* Padding deja un margen respecto del contenido respecto del contenedor. */
+/* Hay un orden para los atributos de cada borde. */
+/* margin: 1px 2px 3px 4px; top right bottom left */
+/* padding: 10px 20px; top and bottom: 10px // left and 20 right: 20px */
+/* margin: 20px; 20px en todas direcciones */
+
+
+#h2 { 
+    color: yellow;
+}
+
+.cont4 {
+    width: 98vw;
+    height: 100vh;
+    background-color: green;
+    padding: 100px 5px 50px 120px;
+    box-sizing: border-box;
+}
+
+.cont5 {
+    width: 90%;
+    height: 90%;
+    background-color: orange;
+    border: 3px solid;
+    border-color: white ;
+}
+
+.cont6 {
+    width: 40%;
+    height: 40%;
+    background-color: rgb(255, 255, 255, 0.4);
+    margin: 100px 5px 5px 12px;
+}
+
+#contenedorimg{
+    background-color: grey;
+    width: 100%;
+    height: 400px;
+}
+
+.imagenes {
+    width: 300px;
+    height: 250px;
+    display: inline-block;
+    border: 2px solid;
+    border-color: black;
+    background-color: white;
+    /* padding: 8px 8px ; */
+    margin: 20px;
+    
+}
+
+#tituloimg{
+    text-align: center;
+    color:rgb(105, 61, 61);
+    font-size: 15px;
+}
+
+img {
+    width: 250px;
+    height: 150px;
+    padding: 20px;
+}
+
+#posicionamiento {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(197, 197, 236);
+}
+
+.caja {
+    width: 200px;
+    height: 80px;
+    background-color: white;
+    
+}
+
+#caja1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid black;
+}
+
+#caja2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid red;
+}
+
+.posicion_texto{
+    padding-top: 10px;
+    text-align: left;
+}
+
+
+.cont7 {
+    width: 100%;
+    height: 600px;
+    background-color: green;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.cont8 {
+    width: 70%;
+    height: 70%;
+    background-color: orange;
+    border: 3px solid;
+    border-color: white ;
+    position: absolute;
+    top: 50%;
+    /* margin: 0 auto; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cont9 {
+    width: 30%;
+    height: 30%;
+    background-color: rgb(255, 255, 255, 0.4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

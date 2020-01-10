@@ -1,0 +1,30 @@
+
+table {
+    border-bottom: 3px solid #00cccc;
+    /* border-collapse: collapse; */
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+th {
+    color: white;
+}
+
+.tabla-encabezado {
+    background-color: #00cccc;
+    text-align: center;
+}
+
+
+.overflow {
+    background-color: rgb(178, 245, 189);
+    width: 600px;
+    height: 150px;
+    border: 1px solid red;
+    overflow: auto;
+    text-align: left;
+  }

@@ -1,0 +1,14 @@
+
+
+body {
+    height:1000px;
+}
+
+
+#bloque {
+    width: 800px;
+    height: 100px;
+    position: fixed;
+    background-color: green;
+}
+

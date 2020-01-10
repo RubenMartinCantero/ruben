@@ -1,0 +1,75 @@
+<div class="pokedex">
+    <div class="display" *ngIf="pokemonSelected !== undefined">
+        <div class="display__pokemon">
+            <div class="display__pokemon--title">
+                {{ pokemonSelected.name }}
+            </div>
+            <div class="display__pokemon--img">
+                <img
+                    src="{{ currentSelectPokemonImage }}"
+                    alt="Pokemon image"
+                    class="pointer"
+                    (click)="switchShiny()"
+                />
+            </div>
+        </div>
+        <div class="display__information">
+            <div class="details">
+                <div
+                    class="details__element1"
+                    *ngIf="pokemonSelected != undefined"
+                >
+                    <div class="details__element1--position">
+                        {{ pokemonSelected.id }}
+                    </div>
+                    <div class="details__element1--img">
+                        <img
+                            src="../../assets/img/types_icons_2/{{
+                                pokemonSelected.types[0].type.name
+                            }}_icon.png"
+                            alt="{{ pokemonSelected.types[0].type.name }}"
+                        />
+                    </div>
+                    <div
+                        *ngIf="pokemonSelected.types[1]"
+                        class="details__element1--img"
+                    >
+                        <img
+                            src="../../assets/img/types_icons_2/{{
+                                pokemonSelected.types[1].type.name
+                            }}_icon.png"
+                            alt="{{ pokemonSelected.types[1].type.name }}"
+                        />
+                    </div>
+                </div>
+                <div class="details__element2">
+                    <div class="details__element2--property1">
+                        <p>Height</p>
+                        <div class="details__element2--units">
+                            <p>{{ pokemonSelected.height / 10 }} m</p>
+                        </div>
+                    </div>
+                    <div class="details__element2--property2">
+                        <p>Weight</p>
+                        <div class="details__element2--units">
+                            <p>{{ pokemonSelected.weight / 10 }} Kg</p>
+                        </div>
+                    </div>
+                    <div class="details__element2--descriptionTitle">
+                        <p>Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <div class="description--text">
+                    {{ englishDescription.flavor_text }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buttons" *ngIf="pokemonSelected !== undefined">
+        <i class="arrow fas fa-caret-left" routerLink="/list"></i>
+        <a class="btn" routerLink="/map/{{ pokemonSelected.id }}">Location</a>
+    </div>
+</div>

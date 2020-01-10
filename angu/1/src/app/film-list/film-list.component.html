@@ -1,0 +1,14 @@
+
+<div *ngIf="selectedFilm == undefined">
+        <div *ngFor="let film of films; index as i"  class="boxFilms" 
+        routerLink="/list/{{i}}"
+        >
+                <div class="ids" >
+                        {{film.id}}
+                </div>
+                <div class="boxContent" (click)="selectItem(film)" >
+                        {{film.title}}
+                </div>
+        </div>
+</div>
+

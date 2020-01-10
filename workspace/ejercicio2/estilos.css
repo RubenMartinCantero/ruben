@@ -1,0 +1,45 @@
+#p1 {
+    color:brown;
+}
+
+#p2 {
+    color:green;
+}
+
+#p3 {
+    color:yellow;
+}
+
+.parrafo-azul {
+    
+    background-color: rgb(154, 232, 235);
+}
+
+.parrafo-verde {
+    
+    background-color: rgb(134, 126, 123);
+}
+
+.cont1 {
+    width: 80vw;
+    height: 100vh;
+    background-color: green;
+    border: 4px solid;
+}
+.cont2 {
+    width: 50%;
+    height: 65%;
+    background-color: red;
+    border: 2px solid ;
+}
+.cont3 {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(112, 63, 112);
+    border: 1px solid;
+} 
+
+/* Border, es el borde, si es que tiene, grosor, forma etc. */
+/* Margin es el margen respecto de otros contenedores */
+/* Padding deja un margen respecto del contenido respecto del contenedor. */
+/* Hay un orden para los atributos de cada brode. */

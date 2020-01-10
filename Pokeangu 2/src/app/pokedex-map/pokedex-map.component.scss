@@ -1,0 +1,132 @@
+@import '../../variables.scss';
+
+.pokedex {
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-backgroundColor;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 2rem;
+
+    @media only screen and (max-width: 800px) {
+        justify-content: center;
+        width: 60rem;
+        height: calc(100vh - 80px);
+        padding: 3rem 0;
+        border-radius: 0;
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 35rem;
+        justify-content: space-around;
+    }
+
+    @media only screen and (max-width: 375px) {
+        width: 100vw;
+    }
+}
+
+.display {
+    width: 100%;
+    height: 90%;
+    background-color: $secondary-backgroundColor;
+    border: 1.3rem solid $borderColor;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1;
+
+    &__pokemon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 90%;
+        width: 30%;
+        img {
+            max-width: 100%;
+        }
+        &--name {
+            width: 85%;
+            height: 18%;
+            background-color: $quaternary-backgroundColor;
+            color: $secondary-textColor;
+            border-radius: 8px;
+            font-size: 1.5vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+
+            @media only screen and (max-width: 800px) {
+                height: 50%;
+                font-size: 2.5vw;
+            }
+
+            @media only screen and (max-width: 375px) {
+                font-size: 5vw;
+            }
+        }
+        &--img {
+            width: 85%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                margin-top: 1rem;
+                width: 160%;
+                height: auto;
+            }
+            @media only screen and (max-width: 800px) {
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+        }
+    }
+
+    &__map {
+        margin: 0px 30px;
+        height: 90%;
+        width: 70%;
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+            height: 350%;
+            padding-bottom: 20px;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        flex-direction: column;
+        width: 90%;
+        height: 60vh;
+    }
+}
+
+#map {
+    border-radius: 10px;
+    height: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5rem;
+    @media only screen and (max-width: 800px) {
+        justify-content: center;
+    }
+}
+
+.arrow {
+    font-size: 8rem;
+}

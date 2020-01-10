@@ -1,0 +1,467 @@
+/*--------------- Variables -------------------- */
+$box-color: #ffffff;
+$wallpaper-color: #BAF7E9;
+$title-color: #252C3B;
+$subtitle-color: #465341;
+$text-color: #427B58;
+$title-font-size: 50px;
+$font-style: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+/*--------------- Styles -------------------- */
+
+body {
+    background-color: $wallpaper-color;
+    font-family: $font-style;
+}
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.box0 {
+    width: 80%;
+    height: 500px;
+    margin: 70px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__img0{
+        width: 100%;
+        height: 100%;
+        &--img {
+            @extend .box0__img0;
+            object-fit: cover;
+        }
+    }
+    &__title0 {
+        position: absolute;
+        font-weight: bold;
+        color: $title-color;
+        & h1 {
+            font-size: 90px;
+            padding-bottom: 10px;
+            letter-spacing: 6px;
+        }
+        & p {
+            border: 3px solid;
+            font-size: 21px;
+            text-align: center;
+        } 
+    }
+}
+/* Slide 1 */
+.box1 {
+    width: 80%;
+    height: 500px;
+    background-color: $box-color;
+    margin: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    &__img1{
+        width: 100%;
+        height: 50%;
+        &--img {
+            width: 100%;
+            height: 100%;
+            object-fit: none;
+        }
+    }
+    &__words1{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        &--title1 {
+            width: 50%;
+            height: 100%;
+            font-size: $title-font-size;
+            font-weight: bold;
+            box-sizing: border-box;
+            padding: 55px 0px 0px 60px;
+            & p {
+                color: $subtitle-color;
+            } 
+            & h1 {
+                color: $title-color;
+                padding-top: 25px;
+            }
+        }
+        &--text1{
+            width: 50%;
+            height: 100%;
+            color: #6A667F;
+            font-size: 17px;
+            text-align: justify;
+            padding: 60px 60px 0px 0px;
+            & span {
+                color: $subtitle-color;
+                font-weight: bold;
+                display: block;
+                padding-bottom: 10px;
+            }
+            & p {
+                line-height: 1.5;
+                color: $text-color; 
+            }
+        }
+    }
+}
+/* Slide 2 */
+.box2 {
+    width: 80%;
+    height: 500px;
+    background-color: $box-color;
+    margin: 70px 0px;
+    display: flex;
+    &__img2{
+        width: 65%;
+        height: 75%;
+        &--img {
+            width: 100%;
+            height: 100%;
+            object-fit: none;
+        }
+    }
+    &__words2{
+        width: 35%;
+        height: 100%;
+        &--title2 {
+            width: 100%;
+            height: 40%;
+            box-sizing: border-box;
+            padding-left: 50px; 
+            font-size: $title-font-size;
+            & p {
+                font-weight: bold;
+                color: $subtitle-color;
+                padding-top: 80px;
+                padding-bottom: 10px;
+                margin: 0px;
+            }
+            & h1 {
+                font-weight: bold;
+                margin: 0px auto;
+                color: $title-color;
+            }
+        }
+        &--text2{
+            width: 100%;
+            height: 60%;
+            padding: 70px 40px 20px 50px;
+            box-sizing: border-box;
+            font-size: 17px;
+            text-align: justify;
+            & span {
+                color: $subtitle-color;
+                font-weight: bold; 
+                display: block;
+                padding-bottom: 10px;
+            }
+            & p { 
+                line-height: 1.5;
+                color: $text-color;
+            }
+        }
+    }
+}
+/* Slide 3 */
+.box3 {
+    width: 80%;
+    height: 500px;
+    background-color: $box-color;
+    margin: 70px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    &__img3 {
+        width: 60%;
+        height: 100%;
+        box-sizing: border-box;
+        padding-top: 80px;
+        &--img {
+            width: 100%;
+            height: 90%;
+            object-fit: none;
+        }
+    }
+    &__img3Small{
+        width: 40%;
+        height: 50%;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        padding-right: 50px ;
+        &--img {
+            width: 48%;
+            height: 45%;
+            object-fit: fill;
+            border: 1.5px solid black;
+        }
+    }   
+    &__title3 {
+        position: absolute;
+        width: 350px;
+        height: 150px;
+        top: 100px;
+        left: 580px; 
+        font-size: $title-font-size;
+        font-weight: bold;
+        & p {
+            color: white;
+            padding-bottom: 10px;
+        }
+        & h1 {
+            color: $title-color;
+        }
+    }
+    &__text3 {
+        width: 40%;
+        height: 50%;
+        padding: 15px 50px 10px 200px;
+        box-sizing: border-box;
+        text-align: justify;
+        font-size: 17px;
+        & span {
+            color: $subtitle-color;
+            display: block;
+            padding-bottom: 8px;
+            font-weight: bold; 
+        }
+        & p { 
+            line-height: 1.5;
+            color: $text-color;
+        }
+    }  
+}
+ /* Slide 4 */
+.box4 {
+    width: 80%;
+    height: 500px;
+    background-color: $box-color;
+    margin: 70px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__img4{
+        width: 100%;
+        height: 87%;
+        &--img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__redes {
+        width: 100%;
+        height: 13%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &  i{
+            width: 30px;
+        }
+        & a{
+            color: $subtitle-color;
+        }
+    }
+    &__title4 {
+        position: absolute;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        & span {
+            font-size: $title-font-size;
+        }
+        & h1 {
+            font-size: $title-font-size;
+            padding-bottom: 25px;
+            line-height: 1.2;
+        }
+        & p {
+            margin-left: 25%;
+            width: 50%;
+            border: 3px solid ;
+            font-size: 21px;
+        } 
+    }
+}
+/* Slide 5 */
+.box5 {
+    width: 80%;
+    height: auto;
+    background-color: $wallpaper-color;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    & i{
+        padding: 25px 25px 0px 0px;
+        font-size: 46px;
+    }
+    & p{
+        font-size: 80px;
+        letter-spacing: 20px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    /* Slide 0 */
+    .box0 {
+        width: 100vw;
+        height: 100vh;
+        margin: 0px 0px 35px 0px; 
+        &__title0 {
+            & h1 {
+                font-size: 60px;
+            }
+            & p {
+                font-size: 20px;
+            }
+        } 
+    }
+    /* Slide 1 */
+    .box1 {
+        width: 100vw;
+        height: 100vh;
+        margin: 0px 0px 35px 0px;
+        flex-direction: column;
+        &__words1{
+            flex-direction: column;
+            &--title1 {
+                width: 100%;
+                height: 25%;
+                font-size: 30px;
+                padding: 20px 0px 0px 0px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                & p {
+                    padding-left: 0px;
+                } 
+                & h1 {
+                    padding-top: 10px;
+                }
+            }
+            &--text1{
+                width: 100%;
+                height: 75%;
+                font-size: 14px;
+                box-sizing: border-box;
+                padding: 40px 40px;
+            }
+        }
+    }
+     /* Slide 2 */
+    .box2 {
+        width: 100vw;
+        height: 100vh; 
+        margin: 0px 0px 35px 0px;
+        flex-direction: column;
+        &__img2{
+            width: 100%;
+            height: 50%;
+        }
+        &__words2{
+            width: 100%;
+            height: 50%;
+            &--title2 {
+                width: 100%;
+                height: 25%;
+                padding: 15px 0px 0px 20px;
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                & p {
+                    padding: 0px;
+                } 
+                & h1 {
+                    padding-top: 10px;
+                }
+            }
+            &--text2{
+                width: 100%;
+                height: 75%;
+                padding: 40px 40px;
+                box-sizing: border-box;
+                font-size: 14px;
+            }
+        }
+    }
+    /* Slide 3 */
+    .box3 {
+        width: 100vw;
+        height: 120vh;
+        margin: 0px 0px 35px 0px;
+        flex-direction: column;
+        &__img3{
+            width: 100%;
+            height: 50%;
+            padding: 0px;
+            &--img {
+                height: 100%;
+            }
+        }
+        &__title3  {
+            position: relative;
+            width: 100%;
+            height: 10%;
+            top: 0px;
+            left: 0px; 
+            font-size: 30px;
+            padding: 15px 0px 10px 0px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            & p {
+                padding: 0px;
+                color:$subtitle-color;
+            } 
+            & h1 {
+                padding-top: 10px;
+            }
+        }
+        &__img3Small {
+            width: 100%;
+            height: 15%;
+            box-sizing: border-box;
+            display:flex;
+            flex-direction: inherit;
+            align-items: center;
+            padding: 0px;
+            &--img {
+                width: auto;
+                height: 100%;
+            }
+        }
+        &__text3{
+            width: 100%;
+            height: 20%;
+            padding: 40px 40px;
+            font-size: 14px;
+        }
+    }
+    /* Slide 4 */
+    .box4 {
+        width: 100vw;
+        height: 100vh; 
+        margin: 0px 0px 35px 0px;
+        &__title4  {
+            & span {
+                font-size: 23px;
+            }
+            & h1 {
+                font-size: 28px;
+            }
+            & p {
+                font-size: 20px;
+            } 
+        }
+    }
+    /* Slide 5 */
+    .box5 {
+        width: 100vw;
+        height: 20vh;
+        margin-bottom: 0px;
+    }
+}

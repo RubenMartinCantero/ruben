@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="display">
+        <div class="left" *ngIf="pokemonSelected !== undefined">
+            <div class="pokemon--name">
+                {{ pokemonSelected.name }}
+            </div>
+            <div class="pokemon--img">
+                <img src="{{ pokemonSelected.sprites.front_default }}" alt="" />
+            </div>
+        </div>
+        <div class="right">
+            <div class="map-container">
+                <div class="map-frame">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <i class="arrow fas fa-caret-left" routerLink="/list"></i>
+        <div class="btn" routerLink="/detail/{{ pokemonId }}">
+            Details
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<p>films works!</p>
+
+
+<p>Segunda parte</p>
+
+
+<!-- Esos dos app (detail y list) son hijos de films.component -->
+
+<app-film-detail [selectedFilm]="selectedFilm"></app-film-detail>
+<app-film-list [films]="films" (selectedfilmEvent)="selectFilm($event)" [selectedFilm]="selectedFilm"></app-film-list>
+
+
